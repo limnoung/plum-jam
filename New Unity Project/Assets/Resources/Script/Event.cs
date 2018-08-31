@@ -139,7 +139,7 @@ public class Event : MonoBehaviour {
     {
         target.GetComponent<Status>().Get_Fund_InOut(changing_Value_Struct.club_Fund);
         target.GetComponent<Status>().Get_Member_InOut(changing_Value_Struct.club_Member_num);
-        target.GetComponent<Status>().Get_Reputateion_Change(changing_Value_Struct.club_Reputation);
+        target.GetComponent<Status>().Get_Reputateion_Change((int)changing_Value_Struct.club_Reputation);
         target.GetComponent<Status>().Get_Member_Status_Change_By_Addition(changing_Value_Struct.member_Happiness, changing_Value_Struct.member_Participation, changing_Value_Struct.member_Learning_Point);
     }
 }

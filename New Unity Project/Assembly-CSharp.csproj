@@ -62,11 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\Script\Activation.cs" />
-    <Compile Include="Assets\Resources\Script\Challenge.cs" />
+    <Compile Include="Assets\Resources\Script\Challenge_Event.cs" />
     <Compile Include="Assets\Resources\Script\Challenge_UI.cs" />
+    <Compile Include="Assets\Resources\Script\ChallengeResult_Event.cs" />
     <Compile Include="Assets\Resources\Script\Event.cs" />
     <Compile Include="Assets\Resources\Script\Event_Window.cs" />
-    <Compile Include="Assets\Resources\Script\GameInfo.cs" />
     <Compile Include="Assets\Resources\Script\Stage_Controller.cs" />
     <Compile Include="Assets\Resources\Script\Status.cs" />
     <Reference Include="UnityEditor.StandardEvents">

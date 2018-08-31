@@ -36,6 +36,5 @@ public class Activation : MonoBehaviour
     public void Challenge()
     {
         GameObject.Find("ChallengeList").SetActive(true);
-
     }
 }
