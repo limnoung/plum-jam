@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Stage_Controller : MonoBehaviour {
-    [ExecuteInEditMode]
     [Header("확인해야할 변수")]
     [SerializeField] int Stage_Num = 1;
     [SerializeField] int Month = 1, Year = 2018;
