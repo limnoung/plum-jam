@@ -129,6 +129,11 @@ public class Event : MonoBehaviour {
         WorkShop.Get_Explain_Text("컴퓨터공학과 동아리 워크숍을 진행했다");
         Exam_Period.Get_Explain_Text("시험기간이 찾아왔다");
     }
+    
+    /*private void Calculate_Change_Status_Value()
+    {
+
+    }*/
 
     private void Send_Event_Signal(GameObject target, Event_Data_Property changing_Value_Struct)
     {

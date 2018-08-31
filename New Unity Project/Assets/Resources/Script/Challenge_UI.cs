@@ -17,7 +17,7 @@ public class Challenge_UI : MonoBehaviour
     }
     void UIupdate()
     {
-        for(int i=0; i<4; i++)
+        for(int i=1; i<5; i++)
         {
             status_Text[i].text = "자금 : " + gameInfo_stat[i].fund + "인원 : " + gameInfo_stat[i].headCount +
                 "행복도 : " + gameInfo_stat[i].Happiness + "참여도 : " + gameInfo_stat[i].participation +
