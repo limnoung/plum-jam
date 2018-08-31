@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Status : MonoBehaviour {
 
+    [ExecuteInEditMode]
     //기본 스테이터스 변수
     [Header("플럼 스테이터스")]
-    public int plum_member_HeadCount;
-    public int plum_Fund;
-    [Range(0, 100)] public float plum_Reputation;
+    public int member_HeadCount;
+    public int Fund;
+    [Range(0, 100)] public float Reputation;
     [Header("플럼 멤버 스테이터스")]
     [Range(0, 100)] public float member_Happiness, member_Participation, member_Learning_Point;
 
@@ -30,16 +31,16 @@ public class Status : MonoBehaviour {
 
     public void Get_Member_InOut(int Change_Member)
     {
-        plum_member_HeadCount += Change_Member;
+        member_HeadCount += Change_Member;
     }
 
     public void Get_Fund_InOut(int Change_Fund)
     {
-        plum_Fund += Change_Fund;
+        Fund += Change_Fund;
     }
 
     public void Get_Reputateion_Change(int Change_Reputation)
     {
-        plum_Fund += Change_Reputation;
+        Fund += Change_Reputation;
     }
 }
