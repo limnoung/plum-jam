@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Activation : MonoBehaviour
-{
+public class Activation : MonoBehaviour {
     [ExecuteInEditMode]
     private Status MyStatus; // Status 정보를 받아옴
     [SerializeField] enum Study_Method { unity = 0, c };

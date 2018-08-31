@@ -47,8 +47,8 @@ public class Event_Window : MonoBehaviour {
         main_Text.text = get_eventData.event_Explain_text;
 
         int i = 0;
-        for (i = 0; i < changing_Status_text.Length; i++) changing_Status_text[i].text = "";
-
+        for (i = changing_Status_text.Length - 1; i > 0; i--) changing_Status_text[i].text = "";
+        
         if (get_eventData.club_Fund > 0) changing_Status_text[i++].text = "자금 + " + get_eventData.club_Fund;
         else if (get_eventData.club_Fund < 0) changing_Status_text[i++].text = "자금 - " + Mathf.Abs(get_eventData.club_Fund);
         if (get_eventData.club_Member_num > 0) changing_Status_text[i++].text = " 인원 + " + get_eventData.club_Member_num;

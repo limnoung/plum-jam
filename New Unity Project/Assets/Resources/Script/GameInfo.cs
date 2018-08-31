@@ -29,7 +29,7 @@ public class GameInfo : MonoBehaviour {
     public static void Get_State(string name, int fund, int headCount, float reputation, float Happines, float participation,
         float learning_Point, bool isEnabled)
     {
-        for(int i=0; i<stats.Length; i++)
+        /*for(int i=0; i<stats.Length; i++)
         {
             if (stats[i].name == name)
             {
@@ -42,6 +42,6 @@ public class GameInfo : MonoBehaviour {
                 stats[i].isEnabled = isEnabled;
                 break;
             }
-        }
+        }*/
     }
 }
