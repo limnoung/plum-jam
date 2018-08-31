@@ -6,12 +6,13 @@ public class Status : MonoBehaviour {
 
     [ExecuteInEditMode]
     //기본 스테이터스 변수
-    [Header("플럼 스테이터스")]
+    [Header("동아리 스테이터스")]
     public int member_HeadCount;
     public int Fund;
     [Range(0, 100)] public float Reputation;
-    [Header("플럼 멤버 스테이터스")]
-    [Range(0, 100)] public float member_Happiness, member_Participation, member_Learning_Point;
+    [Header("멤버 스테이터스")]
+    [Range(0, 100)] public float member_Happiness;
+    [Range(0, 100)] public float member_Participation, member_Learning_Point;
 
 
     //스테이터스 변경 함수
@@ -39,8 +40,8 @@ public class Status : MonoBehaviour {
         Fund += Change_Fund;
     }
 
-    public void Get_Reputateion_Change(int Change_Reputation)
+    public void Get_Reputateion_Change(float Change_Reputation)
     {
-        Fund += Change_Reputation;
+        Reputation += Change_Reputation;
     }
 }
