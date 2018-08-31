@@ -9,28 +9,31 @@ public class Stage_Controller : MonoBehaviour {
     [SerializeField] int Month = 1;
 
     //[Hearder("조정해야할 변수")]
-
+    
 
     [Header("테스트 전용 변수")]
-    [SerializeField] bool test_Turn_Over_signal = false;
-    //public bool Test_Sending_Signal = false;
-    //public bool Test_Event_Signal_Send = false;
-    //public bool Test_Activation_Signal_Send = false;
+    public bool Test_Sending_Signal = false;
+    public bool Test_Event_Signal_Send = false;
+    public bool Test_Activation_Signal_Send = false;
+
+    private void FixedUpdate()
+    {
+        if (Test_Sending_Signal)
+        {
+            Test_Sending_Signal = false;
+            
+        }
+    }
+
 
     private void Update()
     {
-        if (test_Turn_Over_signal)
-        {
-            test_Turn_Over_signal = false;
-            Get_Turn_Over_Signal();
-        }
+        
     }
 
     public void Get_Turn_Over_Signal()
     {
-        Stage_Num++;
-        Month = ++Month % 12;
-        GetComponent<Event>().Get_Turn_Over_Signal();
+
     }
 
     public void Get_Turn_Start_Siganl()
@@ -38,7 +41,7 @@ public class Stage_Controller : MonoBehaviour {
 
     }
 
-    /*public void Get_Event_Signal()
+    public void Get_Event_Signal()
     {
 
     }
@@ -51,5 +54,5 @@ public class Stage_Controller : MonoBehaviour {
     public void Get_TurnOver_Siganl()
     {
 
-    }*/
+    }
 }
